@@ -23,7 +23,7 @@ public class HelloWorldTest {
     @Test
     public void testHelloWorldPageTitle() {
         driver.get("url/to/HelloWorldWebPage.html");
-        assertEquals("Hello World Web Page", driver.getTitle());
+        assertEquals("Hello World Page", driver.getTitle());
     }
 
     @Test
