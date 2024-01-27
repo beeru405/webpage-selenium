@@ -21,14 +21,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>${spring-boot.version}</version>
         </dependency>
-
-        <!-- Spring Boot Starter Test -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring-boot.version}</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -52,4 +44,18 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>selenium-tests</id>
+            <dependencies>
+                <!-- Add any dependencies needed for your Selenium tests here -->
+            </dependencies>
+            <build>
+                <plugins>
+                    <!-- Add plugins specific to your Selenium tests here -->
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
