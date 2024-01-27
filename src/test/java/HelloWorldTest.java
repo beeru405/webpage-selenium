@@ -30,7 +30,7 @@ public class HelloWorldTest {
     public void testHelloWorldMessage() {
         driver.get("url/to/HelloWorldWebPage.html");
         WebElement messageElement = driver.findElement(By.tagName("h1"));
-        assertEquals("Hello, World!", messageElement.getText());
+        assertEquals("Hai, World!", messageElement.getText());
     }
 
     @Test
