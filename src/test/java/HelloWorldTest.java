@@ -16,7 +16,7 @@ public class HelloWorldTest {
     @Before
     public void setUp() {
         // Set up WebDriver
-        System.setProperty("webdriver.chrome.driver", "/home/devops/Downloads/chromedriver-linux64/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         driver = new ChromeDriver();
     }
 
